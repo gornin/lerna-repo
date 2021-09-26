@@ -12,5 +12,6 @@
     "fruit": "^1.0.0",
     "jquery": "^3.6.0",
     "lodash": "^4.17.21"
-  }
+  },
+  "gitHead": "e9b0fc0b09f9e635b9fac37d0d8f1d0e9ae09163"
 }

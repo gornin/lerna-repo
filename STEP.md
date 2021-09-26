@@ -15,16 +15,26 @@
 
    `lerna add lodash`
 
-7. 添加单独依赖
+7. 抽离公共模块
+
+   `lerna bootstrap --hoist`
+
+8. 添加单独依赖
 
    `lerna add jquery --scope=fruit`
 
    `lerna add zepto --scope=apple`
 
-8. 添加 packages 里其他模块作为自己的依赖
+9. 添加 packages 里其他模块作为自己的依赖
 
    `lerna add fruit --scope=apple`
 
-9. 全 package 发布
+10. 更新公共依赖
 
-   `lerna publish`
+    `npm install --save-dev lerna-update-wizard`
+
+    `./node_modules/.bin/lernaupdate`
+
+11. 全 package 发布
+
+    `lerna publish`
